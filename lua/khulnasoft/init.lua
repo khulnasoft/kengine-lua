@@ -1,5 +1,6 @@
 require("khulnasoft.set")
 require("khulnasoft.remap")
+
 require("khulnasoft.lazy_init")
 
 -- DO.not
@@ -45,18 +46,6 @@ autocmd({"BufWritePre"}, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
-
-autocmd('BufEnter', {
-    group = KhulnaSoftGroup,
-    callback = function()
-        if vim.bo.filetype == "zig" then
-            vim.cmd.colorscheme("tokyonight-night")
-        else
-            vim.cmd.colorscheme("rose-pine-moon")
-        end
-    end
-})
-
 
 autocmd('LspAttach', {
     group = KhulnaSoftGroup,

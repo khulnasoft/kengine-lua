@@ -1,6 +1,9 @@
 ### KhulnaSoft's init.lua
-Prerequisite: install [ripgrep](https://github.com/BurntSushi/ripgrep).
+This is my new RC.  There is no video yet.
 
-For anyone that is interested in my vimrc, i will have a commit log below
-documenting each one of my commits (easy to C-f the change you want to know
-about though i would just suggest `git log -S`).
+### Change Log
+[cd1167a](https://github.com/KhulnaSoft/neovimrc/commit/cd1167a72240b2052eb182f2a5f27b29be1ec627)
+* added another remap, <leader>tf (leader test file), to run the entire file
+  using neotest
+
+
